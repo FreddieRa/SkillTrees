@@ -1,3 +1,19 @@
+for (let item of [
+	"Data",
+	"Dijkstra",
+	"Functions", 
+	"keyPressed",
+	"mouseDragged",
+	"mousePressed",
+	"Node", 
+	"SaveAndLoad",
+	"Start"
+	]) {
+	let imported = document.createElement('script');
+	imported.src = "./Javascript/" + item + ".js";
+	document.head.appendChild(imported);
+}
+
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(255);

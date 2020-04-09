@@ -208,9 +208,9 @@ select option {
 	height: auto;
 	padding: 100px 0;
 	text-align: center;
-	color: #fff;
-	background: url(../Images/GrimChartLogo.png) no-repeat center/auto 120% !important;
-	background-color: #ffffff;
+	color: #000;
+	background: url(../Images/LostLegendsLogo.png) no-repeat center/auto 120% !important;
+	background-color: #000000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -750,6 +750,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 section {
 	padding: 120px 0;
 }
+
+header {
+	background-color: #000
+}
+
 header .intro-text {
 	padding-top: 300px;
 	padding-bottom: 200px;
