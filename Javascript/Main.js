@@ -1,6 +1,6 @@
 for (let item of [
 	"Data",
-	"Dijkstra",
+	"Djikstra",
 	"Functions", 
 	"keyPressed",
 	"mouseDragged",
@@ -12,6 +12,10 @@ for (let item of [
 	let imported = document.createElement('script');
 	imported.src = "./Javascript/" + item + ".js";
 	document.head.appendChild(imported);
+}
+
+function preload() {
+	ex = loadStrings("examples/Default.txt")
 }
 
 function setup() {
@@ -26,6 +30,10 @@ function setup() {
 	// File browser button
 	browse = createFileInput(loadTree)
 	browse.position(width - 250, 40)
+
+	addExample = createButton("Load Example")
+	addExample.mousePressed(function() {loadTree(ex[0], true)})
+	addExample.position(width - 250, 60)
 	
 	// The desired cost for showing the average number of skill and attribute points
 	costToUse = 0;

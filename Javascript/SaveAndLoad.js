@@ -25,8 +25,9 @@ function simplifyNode(node) {
 	return temp;
 }
 
-function loadTree(file) {
-	let string = file.data.replace(/(\r\n|\n|\r)/gm, "");
+function loadTree(file, isText) {
+	let string = isText ? file : file.data
+	string = string.replace(/(\r\n|\n|\r)/gm, "");
 	let loaded = eval(string)
 	startID = loaded[4];
 	
