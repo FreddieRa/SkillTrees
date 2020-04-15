@@ -37,9 +37,8 @@ function keyPressed() {
 	if (keyIsDown(CONTROL) && key == "f") {
 		let string = prompt("String:")
 		if(string) {
-			string = (string).toLowerCase()
 			for (let [key, value] of Object.entries(nodes)) {
-				if (value.name.toLowerCase().includes(string)) {
+				if (value.name.toLowerCase().includes(string.toLowerCase())) {
 					selected.push(key)	
 				}
 			}

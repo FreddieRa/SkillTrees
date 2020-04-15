@@ -7,7 +7,8 @@ for (let item of [
 	"mousePressed",
 	"Node", 
 	"SaveAndLoad",
-	"Start"
+	"Start",
+	"TreeSearch"
 	]) {
 	let imported = document.createElement('script');
 	imported.src = "./Javascript/" + item + ".js";
@@ -71,6 +72,8 @@ function setup() {
 	checker.add(this, 'calcLinks').name("Calculate links");
 	checker.add(this, 'orphanCheck').name("Check orphans");
 	checker.add(this, 'maxOfEachStat').name("maxOfEachStat");
+	checker.add(this, 'checkMagnitudes').name("Check Magnitudes")
+	checker.add(this, 'treeSearch').name("Tree Search")
 	
 	checker.add(this, 'dumpConsole').name("Dump Console");
 	checker.add(this, 'clearConsole').name("Clear Console");

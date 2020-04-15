@@ -267,9 +267,22 @@ function between(x, a, b) {
 	return (betA && betB)
 }
 
+function checkMagnitudes() {
+	for (let [key, value] of Object.entries(nodes)) {
+		if (value.magnitude > 1) {
+			selected.push(key)
+			print("Highlighed node has magnitude greater than 1!")
+		}
+	}
+}
 
-
-
+function highlight(string) {
+	for (let [key, value] of Object.entries(nodes)) {
+		if (value.name == string) {
+			selected.push(key)	
+		}
+	}
+}
 
 
 
