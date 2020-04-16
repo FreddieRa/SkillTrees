@@ -20,8 +20,10 @@ function treeSearch() {
             if (cost in costs[name] && costs[name][cost] > 0) {
                 costs[name][cost] = costs[name][cost] - 1
             } else {
-                print("Too many of cost: " + cost + " for " + value.name)
-                problems.push(value.name)
+                if (cost != 0) {
+                    print("Too many of cost: " + cost + " for " + value.name)
+                    problems.push(value.name)
+                }
             }
         }
     }
