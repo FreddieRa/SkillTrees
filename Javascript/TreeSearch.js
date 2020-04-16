@@ -21,7 +21,9 @@ function treeSearch() {
                 costs[name][cost] = costs[name][cost] - 1
             } else {
                 if (cost != 0) {
-                    print("Too many of cost: " + cost + " for " + value.name)
+                    let str = "Too many of cost: " + cost + " for " + value.name
+                    consoleContents.push(str)
+                    print(str)
                     problems.push(value.name)
                 }
             }
