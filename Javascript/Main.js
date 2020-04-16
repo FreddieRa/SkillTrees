@@ -55,9 +55,11 @@ function setup() {
 	
 	// All of the GUI for checking nodes
 	loc = createElement('p');
-	loc.position(0, 50);
+	loc2 = createElement('p')
+	loc.position(width-250, 80);
+	loc.style.width = 250
 	mainGUI = new dat.GUI({
-		autoPlace: true,
+		autoPlace: false,
 		width: 200,
 		height: 250
 	});

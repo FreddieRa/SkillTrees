@@ -20,6 +20,7 @@
 }
 
 .dg.main {
+    width: 250px !important; 
     -webkit-transition: opacity .1s linear;
     -o-transition: opacity .1s linear;
     -moz-transition: opacity .1s linear;
@@ -46,6 +47,7 @@
 }
 
 .dg.main .close-button {
+    width: 250px !important;
     -webkit-transition: opacity .1s linear;
     -o-transition: opacity .1s linear;
     -moz-transition: opacity .1s linear;
@@ -150,14 +152,14 @@
     cursor: default;
     float: left;
     clear: left;
-    width: 70%;
+    width: 60%;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
 .dg .c {
     float: left;
-    width: 60%;
+    width: 40%;
     position: relative
 }
 
@@ -170,7 +172,7 @@
 }
 
 .dg .has-slider input[type=text] {
-    width: 30%;
+    width: 40%;
     margin-left: 0
 }
 
