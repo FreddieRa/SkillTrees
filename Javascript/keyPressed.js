@@ -2,7 +2,7 @@ function keyPressed() {
 	selected = []
 	let h = gui ? height*10 : 250
 	if (Object.keys(modes[version]).includes(key)) {
-		if (gui) {gui.destroy(); gui = false}
+		if (gui) {gui.domElement.parentNode.removeChild(gui.domElement); gui = false}
 		mode = int(key)
 		from = -1;
 		to = -1;

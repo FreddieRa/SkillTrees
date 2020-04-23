@@ -34,11 +34,11 @@
 .dg.main.taller-than-window .close-button {
     opacity: 1;
     margin-top: -1px;
-    border-top: 1px solid #2c2c2c
+    border-top: 1px solid #2c2c2c;
 }
 
 .dg.main ul.closed .close-button {
-    opacity: 1 !important
+    opacity: 1 !important;
 }
 
 .dg.main:hover .close-button,

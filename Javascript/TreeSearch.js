@@ -29,8 +29,27 @@ function treeSearch() {
             }
         }
     }
-    for (problem of problems) {
-        highlight(problem)
+
+    let few = false
+    for (let item of Object.values(Object.assign({}, skillTable, attTable))) {
+        for (let [cost, value] of Object.entries(costs[item])) {
+            if (value > 0) {
+                let str = "Too few of cost: " + cost + " for " + item
+                consoleContents.push(str)
+                print(str)
+                few = true
+            }
+        }
+    }
+
+    if (problems.length != 0) {
+        for (problem of problems) {
+            highlight(problem)
+        }
+    } else {
+        if (!few) {
+            print("All okay!")
+        }
     }
 }
 
